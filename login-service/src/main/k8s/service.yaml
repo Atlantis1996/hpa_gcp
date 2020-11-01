@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-login-service
+  labels:
+    app: LoginApplication
+spec:
+  selector:
+    app: LoginApplication
+    tier: web
+  ports:
+  - port: 80
+    targetPort: 8080
+  type: NodePort

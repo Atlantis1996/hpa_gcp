@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-login-config
+data:
+  LIST_OF_PROFILE_ENDPOINTS: 'spring-profile-service.default.svc.cluster.local'
+  MYSQL_DB_HOST: 'mysql-login.default.svc.cluster.local'
+  MYSQL_DB_USER: 'zhaoxual@andrew.cmu.edu'
+  MYSQL_DB_PASSWORD: 'qazqaz1029'
+  MYSQL_DB_PORT: '3306'    
+  CHAT_ENDPOINT: '35.229.96.33'                         

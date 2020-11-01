@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-profile-config
+data:
+  # update MySQL environment variables for the profile service
+  MYSQL_DB_HOST: 'mysql-profile.default.svc.cluster.local'
+  MYSQL_DB_USER: 'zhaoxual@andrew.cmu.edu'
+  MYSQL_DB_PASSWORD: 'qazqaz1029'
+  MYSQL_DB_PORT: '3306'
